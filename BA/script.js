@@ -46,37 +46,6 @@ const study = lab.util.fromObject({
           "items": [
             {
               "type": "text",
-              "content": "\u003Cp\u003E本実験の実施者は岐阜大学教育学部の古田悠揮です。\u003Cbr\u003E本実験・調査への参加はあなたの任意によるものです。\u003C\u002Fp\u003E\n\u003Col\u003E\n    \u003Cli\u003E本実験・調査の目的\n        \u003Cbr\u003E単語の記憶について調べることが本実験・調査の目的です。\n    \u003C\u002Fli\u003E\u003Cbr\u003E\n    \u003Cli\u003E本実験・調査の手続き\n        \u003Cbr\u003Eもし，あなたが本実験・調査に参加した場合，あなたは単語の学習などの認知課題に取り組んでいただきます。この実験・調査の所要時間は約N分程度です。\n    \u003C\u002Fli\u003E\u003Cbr\u003E\n    \u003Cli\u003E潜在的なリスク・苦痛など\n        \u003Cbr\u003E実験による多少の疲労は除き，潜在的なリスクや苦痛はありません。また，いつ，いかなる理由でも，自由に実験を中止していただけます（6.参加と中止もご参照ください）。\n    \u003C\u002Fli\u003E\u003Cbr\u003E\n    \u003Cli\u003E参加による利益\n        \u003Cbr\u003Eあなたが本実験・調査に参加することで学習，認知，感情についての研究の発展に繋がります。\n    \u003C\u002Fli\u003E\u003Cbr\u003E\n    \u003Cli\u003E匿名性の確保\n        \u003Cbr\u003E本実験・調査によって得られた情報は法律による開示請求を除き，匿名性が維持されます。匿名性は実験参加者番号の付与，統計的解析によって保たれます。\n    \u003C\u002Fli\u003E\u003Cbr\u003E\n    \u003Cli\u003E参加と中止\n        \u003Cbr\u003Eあなたは本実験・調査への参加もしくは不参加を自由に選択できます。\u003Cbr\u003Eまた，参加した場合でも，いつでも，どのような理由でも，途中で実験・調査を中止することができます。\u003Cbr\u003E\n        もし，途中で実験・調査を中止したくなった場合は，「ESCキー」を押した後，ウィンドウを閉じることで実験・調査を中止できます。\n    \u003C\u002Fli\u003E\u003Cbr\u003E\n    \u003Cli\u003E実験・調査実施者への問い合わせ\n        \u003Cbr\u003E本実験・調査に対して質問がある場合は，実施者にお問い合わせください。\n    \u003C\u002Fli\u003E\n\u003C\u002Fol\u003E"
-            },
-            {
-              "required": true,
-              "type": "checkbox",
-              "label": "実験・調査への参加に同意いただけますか？\u003Cbr\u003E同意いただける方はチェックをお願いします。同意いただけない方は，ESCを押した後，ウィンドウを閉じてください。",
-              "options": [
-                {
-                  "label": "上記の説明をよく読み、理解したうえで、実験への参加に同意する。",
-                  "coding": "informedConsent"
-                }
-              ],
-              "name": "lessbrgreateresc"
-            }
-          ],
-          "scrollTop": true,
-          "submitButtonText": "つぎへ",
-          "submitButtonPosition": "right",
-          "files": {},
-          "responses": {
-            "": ""
-          },
-          "parameters": {},
-          "messageHandlers": {},
-          "title": "informedConsent"
-        },
-        {
-          "type": "lab.html.Page",
-          "items": [
-            {
-              "type": "text",
               "content": "単語が呈示されます。可能な限り覚えてください。"
             },
             {
@@ -322,6 +291,22 @@ const study = lab.util.fromObject({
             "content": [
               {
                 "type": "lab.canvas.Screen",
+                "content": [],
+                "viewport": [
+                  800,
+                  600
+                ],
+                "files": {},
+                "responses": {
+                  "": ""
+                },
+                "parameters": {},
+                "messageHandlers": {},
+                "title": "Screen",
+                "timeout": "500"
+              },
+              {
+                "type": "lab.canvas.Screen",
                 "content": [
                   {
                     "type": "i-text",
@@ -353,22 +338,6 @@ const study = lab.util.fromObject({
                 "parameters": {},
                 "messageHandlers": {},
                 "title": "fixation",
-                "timeout": "500"
-              },
-              {
-                "type": "lab.canvas.Screen",
-                "content": [],
-                "viewport": [
-                  800,
-                  600
-                ],
-                "files": {},
-                "responses": {
-                  "": ""
-                },
-                "parameters": {},
-                "messageHandlers": {},
-                "title": "Screen",
                 "timeout": "500"
               },
               {
